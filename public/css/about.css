@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.about-me-main {
+  margin-top: 2rem;
+}
+
+.montserrat-sell-heading-about {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  color: #084769;
+}
+
+.certificates-icons {
+  width: 8rem;
+}
+
+.hero-image {
+  width: 40rem;
+}
+
+.paragraph-container {
+  width: 50rem;
+  margin-top: 2rem;
+}
+
+.cta-containers {
+  display: flex;
+  gap: 1rem;
+}
+
+.roboto-sell-paragraph-about {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #084769;
+}
+
+.personal-note {
+  margin-top: 2rem;
+}
+
+@media (min-width: 425px) {
+  .container {
+    min-width: 100%;
+  }
+
+  .about-me-main {
+    width: 100%;
+  }
+
+  .hero-title-image-paragraph {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 0.1rem;
+  }
+
+  .grid-col-span-4 {
+    grid-column: span 3;
+  }
+
+  .hero-heading {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #084769;
+    font-size: 1.75rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 1rem;
+  }
+
+  .certificates-icons {
+    width: 4rem;
+  }
+
+  .paragraph-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 550px) {
+  .hero-description {
+    width: 20rem;
+  }
+
+  .hero-title-image-paragraph {
+    grid-template-rows: auto auto; /* h1 on row 1, p on row 2 */
+    align-items: start;
+  }
+
+  .hero-heading {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    grid-column: 2;
+    grid-row: 1 / span 2; /* spans both rows */
+  }
+
+  .hero-paragraph {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 1.2rem;
+  }
+
+  .paragraph-container {
+    font-size: 1.2rem;
+  }
+
+  .certificates-icons {
+    width: 6rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-heading {
+    font-size: 2.9rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.9rem;
+  }
+}

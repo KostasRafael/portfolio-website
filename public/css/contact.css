@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+.contact-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #084769;
+}
+
+.contact-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #084769;
+}
+
+.address-number-paragraph {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #084769;
+  color: #e76f51;
+  font-size: 1.5rem;
+}
+
+.time-zone {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: #084769;
+
+  margin-bottom: 0;
+}
+
+.form-container {
+  background-color: #084769;
+  color: hsl(44, 43%, 93%);
+  width: 40%;
+  min-width: 40%;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 50px; /* Size of the icon */
+  height: 50px; /* Size of the icon */
+  background-color: #333; /* Dark background */
+  color: white; /* White icons */
+  border-radius: 50%; /* Make it circular */
+  text-align: center; /* Center the icon */
+  line-height: 50px; /* Vertically center the icon */
+  margin: 0.5rem; /* Space between icons */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.social-icon:hover {
+  background-color: #4c4f56; /* Slightly lighter shade on hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+  transform: translateY(-3px); /* Icon "lifts" slightly on hover */
+}
+
+.social-icon i {
+  font-size: 24px; /* Icon size */
+  transition: transform 0.2s ease; /* Smooth icon transition */
+}
+
+.social-icon:hover i {
+  transform: scale(1.1); /* Slight zoom effect on icon */
+}
+
+/* Specific colors for each social icon */
+.social-icon.facebook {
+  background-color: #1877f2; /* Facebook Blue */
+}
+
+.social-icon.instagram {
+  background-color: #e4405f; /* Instagram Pinkish */
+}
+
+.social-icon.medium {
+  background-color: #00ab6c; /* Medium Green */
+}
+
+.social-icon.x-twitter {
+  background-color: #1da1f2; /* Twitter Blue */
+}
+
+.social-icon.linkedin {
+  background-color: #0077b5; /* LinkedIn Blue */
+}
+
+.adress-number {
+}
+
+.section-title {
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 5rem; /* Adjust width to your liking */
+  height: 0.2rem;
+  background-color: #a52a2a; /* Change to your red */
+  margin-top: 15px;
+}

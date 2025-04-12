@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/contact.css" type="text/css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "P4tja-4QzLeSfS5ci",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('form-container').addEventListener('submit', function (event) {
+                event.preventDefault();
+                emailjs.sendForm('service_aliltur', 'template_02vq7ui', this).then(() => {
+                    alert("Your message has been sent!");
+                }, (error) => {
+                    console.log('FAILED...', error);
+                });
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="../views/index.html">Rafael Techie Co.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navigation-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../views/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../views/contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="response-time" style=" width: 20rem;padding: 1rem; background-color: aqua;">
+            <h6>I will respond within 6 hours after I have received your email! All days of the week!!!</h6>
+        </div>
+        <div style="display: flex; justify-content: space-between; gap: 2rem;">
+            <form id="form-container" class="p-4"
+                style="background-color: #084769; color: #f5f1e6; width: 60%; min-width: 60%;">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="from_name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="reply_to">
+                    <div id="emailHelp" class="form-text" style="color: #f5f1e6;">We'll never share your email with
+                        anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input type="text" class="form-control" id="subject" name="subject">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="social-icon facebook pulse" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://instagram.com" class="social-icon instagram pulse" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://medium.com" class="social-icon medium pulse" target="_blank">
+                            <i class="fab fa-medium"></i>
+                        </a>
+
+                        <a href="https://x.com" class="social-icon x-twitter pulse" target="_blank">
+                            <i class="fab fa-x-twitter"></i>
+                        </a>
+
+                        <a href="https://linkedin.com" class="social-icon linkedin pulse" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+            <div class="adress-number">
+                <h1 class="section-title contact-h1">My Address</h1>
+                <p class="address-number-paragraph">Chania - Crete</p>
+                <h1 class="section-title contact-h1">Phone Number</h1>
+                <p class="address-number-paragraph">6785437256</p>
+                <p class="time-zone">I'm in the UTC+03:00 time zone.</p>
+                <p class="contact-paragraph">
+                    If you call and I don't respond, it's probably late at night here and I'm asleep.
+                    Please try again later — thanks for understanding! </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

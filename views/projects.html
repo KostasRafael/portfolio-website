@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/css/main.css" type="text/css">
+    <link rel="stylesheet" href="../public/css/projects.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid d-flex justify-content-between">
+                <a class="navbar-brand" href="../views/index.html">Rafael Techie Co.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navigation-links">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../views/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/about-me.html">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="../views/projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../views/contact.html">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- myFlix React Modal -->
+        <div class="modal fade" id="myflixmodal" tabindex="-1" aria-labelledby="myflixmodal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title modal-h1" id="reactModalLabel">myFlix</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../public/images/myflix-cover.png" style="max-width: 100%;" alt="">
+                        <h2 class="modal-h2">Overview</h2>
+                        <p class="modal-p">myFlix client is a movies application that displays a list of movies. Users
+                            can create an
+                            account and then login using their user credentials. Once logged in, users can add movies to
+                            their list of favorite movies, as well as remove movies from that list. Additionally, users
+                            can edit their user details and delete their account.
+                        </p>
+                        <h2 class="modal-h2">Features</h2>
+                        <div class="container-fluid">
+                            <div class="row gx-1 gy-1">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can Sign Up</h5>
+                                        <img src="../public/images/modals-images/signup.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can Login</h5>
+                                        <img src="../public/images/modals-images/login.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see a list of movies</h5>
+                                        <img src="../public/images/modals-images/list copy.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see their list of favorite movies</h5>
+                                        <img src="../public/images/modals-images/favorite-movies.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can add a movie to their list of favorites</h5>
+                                        <img src="../public/images/modals-images/hearted-movie.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can remove a movie from their list of favorites</h5>
+                                        <img src="../public/images/modals-images/remove-favorite.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can update their personal info</h5>
+                                        <img src="../public/images/modals-images/update-user.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can delete their account</h5>
+                                        <img src="../public/images/modals-images/delete-user.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="modal-h2">Technologies</h2>
+                        <div class="marquee-container">
+                            <ul>
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+                                <li><img class="marquee-image" src="../public/images/parcel.jpg" alt="parcel icon"></li>
+                                <li><img class="marquee-image" src="../public/images/redux.png" alt="redux icon"></li>
+                                <li><img class="marquee-image" src="../public/images/netlify.png" alt="netlify icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/heroku.png" alt="heroku icon"></li>
+
+                            </ul>
+
+                            <ul aria-hidden="true">
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+                                <li><img class="marquee-image" src="../public/images/parcel.jpg" alt="parcel icon"></li>
+                                <li><img class="marquee-image" src="../public/images/redux.png" alt="redux icon"></li>
+                                <li><img class="marquee-image" src="../public/images/netlify.png" alt="netlify icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/heroku.png" alt="heroku icon"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- myFlix Angular Modal -->
+        <div class="modal fade" id="myflixangularmodal" tabindex="-1" aria-labelledby="myflixangularmodal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title modal-h1" id="angularModalLabel">myFlix Angular</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../public/images/myflix-cover.png" style="max-width: 100%;" alt="">
+                        <h2 class="modal-h2">Overview</h2>
+                        <p class="modal-p">myFlix Angular client is a movies application that displays a list of movies.
+                            Users
+                            can create an
+                            account and then login using their user credentials. Once logged in, users can add movies to
+                            their list of favorite movies, as well as remove movies from that list. Additionally, users
+                            can edit their user details and delete their account.
+                        </p>
+                        <h2 class="modal-h2">Features</h2>
+                        <div class="container-fluid">
+                            <div class="row gx-1 gy-1">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can Sign Up</h5>
+                                        <img src="../public/images/modals-images/signup.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can Login</h5>
+                                        <img src="../public/images/modals-images/login.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see a list of movies</h5>
+                                        <img src="../public/images/modals-images/list copy.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see their list of favorite movies</h5>
+                                        <img src="../public/images/modals-images/favorite-movies.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can add a movie to their list of favorites</h5>
+                                        <img src="../public/images/modals-images/hearted-movie.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can remove a movie from their list of favorites</h5>
+                                        <img src="../public/images/modals-images/remove-favorite.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can update their personal info</h5>
+                                        <img src="../public/images/modals-images/update-user.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can delete their account</h5>
+                                        <img src="../public/images/modals-images/delete-user.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="modal-h2">Technologies</h2>
+                        <div class="marquee-container">
+                            <ul>
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+
+                            </ul>
+
+                            <ul aria-hidden="true">
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- meetup Modal -->
+        <div class="modal fade" id="meetupmodal" tabindex="-1" aria-labelledby="meetupmodal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title modal-h1" id="meetupModalLabel">Meet App</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../public/images/modals-images/meet-app/meet.png" style="max-width: 100%;" alt="">
+                        <h2 class="modal-h2">Overview</h2>
+                        <p class="modal-p">myFlix Angular client is a movies application that displays a list of movies.
+                            Users
+                            can create an
+                            account and then login using their user credentials. Once logged in, users can add movies to
+                            their list of favorite movies, as well as remove movies from that list. Additionally, users
+                            can edit their user details and delete their account.
+                        </p>
+                        <h2 class="modal-h2">Features</h2>
+                        <div class="container-fluid">
+                            <div class="row gx-1 gy-1">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can See a list of events</h5>
+                                        <img src="../public/images/modals-images/meet-app/events-list.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can search event by name or city</h5>
+                                        <img src="../public/images/modals-images/meet-app/events-number.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see a pie chart that represents the events</h5>
+                                        <img src="../public/images/modals-images/meet-app/pie-chart.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">User can see a scatter chart that represents the events
+                                        </h5>
+                                        <img src="../public/images/modals-images/meet-app/scatter-chart.png" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <h2 class="modal-h2">Technologies</h2>
+                        <div class="marquee-container">
+                            <ul>
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+                                <li><img class="marquee-image" src="../public/images/cucumber.png" alt="cucumber icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/puppeteer.png"
+                                        alt="puppeteer icon"></li>
+                                <li><img class="marquee-image" src="../public/images/google-api.jpg"
+                                        alt="google api icon"></li>
+                                <li><img class="marquee-image" src="../public/images/oauth.png" alt="oauth icon"></li>
+                                <li><img class="marquee-image" src="../public/images/lamda.jpg" alt="lamda icon"></li>
+                                <li><img class="marquee-image" src="../public/images/pwa.png" alt="pwa icon"></li>
+                                <li><img class="marquee-image" src="../public/images/recharts.png" alt="recharts icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/jest.png" alt="jest icon"></li>
+                            </ul>
+
+                            <ul aria-hidden="true">
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/react.jpg" alt="react icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon"></li>
+                                <li><img class="marquee-image" src="../public/images/cucumber.png" alt="cucumber icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/puppeteer.png"
+                                        alt="puppeteer icon"></li>
+                                <li><img class="marquee-image" src="../public/images/google-api.jpg"
+                                        alt="google api icon"></li>
+                                <li><img class="marquee-image" src="../public/images/oauth.png" alt="oauth icon"></li>
+                                <li><img class="marquee-image" src="../public/images/lamda.jpg" alt="lamda icon"></li>
+                                <li><img class="marquee-image" src="../public/images/pwa.png" alt="pwa icon"></li>
+                                <li><img class="marquee-image" src="../public/images/recharts.png" alt="recharts icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/jest.png" alt="jest icon"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- movie_api Modal -->
+        <div class="modal fade" id="movieapimodal" tabindex="-1" aria-labelledby="movieapimodal" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title modal-h1" id="movieapiModalLabel">Movie Api</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="../public/images/modals-images/movie-api/endpoints.png" style="max-width: 100%;"
+                            alt="">
+                        <h2 class="modal-h2">Overview</h2>
+                        <p class="modal-p">myFlix Angular client is a movies application that displays a list of movies.
+                            Users
+                            can create an
+                            account and then login using their user credentials. Once logged in, users can add movies to
+                            their list of favorite movies, as well as remove movies from that list. Additionally, users
+                            can edit their user details and delete their account.
+                        </p>
+                        <h2 class="modal-h2">Endpoints</h2>
+                        <div class="container-fluid">
+                            <div class="row gx-1 gy-1">
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class=" card modal-feature-card">
+                                        <h5 class="modal-h5">Sign Up</h5>
+                                        <img src="../public/images/modals-images/movie-api/signup-endpoint.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Login</h5>
+                                        <img src="../public/images/modals-images/movie-api/login-endpoint.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Fetch all movies</h5>
+                                        <img src="../public/images/modals-images/movie-api/fetch-movies-endpoint.png">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Add movie to list of favorites</h5>
+                                        <img src="../public/images/modals-images/movie-api/favorite-movies-endpoint.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Remove movie from list of favorites</h5>
+                                        <img src="../public/images/modals-images/movie-api/delete-movie-endpoint.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Update user details</h5>
+                                        <img src="../public/images/modals-images/movie-api/update-user-endpoint.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4">
+                                    <div class="card modal-feature-card">
+                                        <h5 class="modal-h5">Delete user account</h5>
+                                        <img src="../public/images/modals-images/movie-api/delete-user-endpoint.png"
+                                            alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h2 class="modal-h2">Technologies</h2>
+                        <div class="marquee-container">
+                            <ul>
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/express.png" alt="express icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/mongoose.png" alt="mongoose icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/passport.png" alt="passport icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/npm.jpg" alt="npm icon"></li>
+
+
+                            </ul>
+
+                            <ul aria-hidden="true">
+                                <li><img class="marquee-image" src="../public/images/html.jpg" alt="html icon"></li>
+                                <li><img class="marquee-image" src="../public/images/css-logo.jpg" alt="css icon"></li>
+                                <li><img class="marquee-image" src="../public/images/node.jpg" alt="node icon"></li>
+                                <li><img class="marquee-image" src="../public/images/express.png" alt="express icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/mongodb.png" alt="mongodb icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/mongoose.png" alt="mongoose icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/passport.png" alt="passport icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/bootstrap.png"
+                                        alt="bootstrap icon">
+                                </li>
+                                <li><img class="marquee-image" src="../public/images/npm.jpg" alt="npm icon"></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container projects-grid">
+            <div class="card">
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+                    <h2 class="card-title">MyFlix React</h2>
+                    <img src="../public//images/myflix-cover.png" alt="image of myflix project"
+                        style="width: 100%; height: 40%">
+                    <p class="card-paragraph">A movies application that allows users to stream a
+                        list
+                        of
+                        movies and add movies to
+                        their list of favorites!</p>
+                    <div class="buttons-container">
+                        <a type="button" class="btn btn-primary card-button " data-bs-toggle="modal"
+                            data-bs-target="#myflixmodal">Read
+                            More</a>
+                        <a href="https://myflixmoviescollection.netlify.app/" class="btn btn-warning card-button "
+                            target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/KostasRafael/myFlix-client.git" class="btn btn-warning card-button "
+                            target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+                    <h2 class="card-title">MyFlix Angular</h2>
+                    <img src="../public//images/myflix-angular-cover.png" alt="image of myflix project"
+                        style="width: 100%; height: 40%">
+                    <p class="card-paragraph">A movies application that allows users to stream a
+                        list
+                        of
+                        movies and add movies to
+                        their list of favorites!</p>
+                    <div class="buttons-container">
+                        <a type="button" class="btn btn-primary card-button" data-bs-toggle="modal"
+                            data-bs-target="#myflixangularmodal">Read More</a>
+                        <a href=" https://kostasrafael.github.io/myFlix-Angular-client/"
+                            class="btn btn-warning card-button" target="_blank" rel="noopener noreferrer">Live
+                            Demo</a>
+                        <a href="https://github.com/KostasRafael/myFlix-Angular-client.git"
+                            class="btn btn-warning card-button" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+                    <h2 class="card-title">Meet App</h2>
+                    <img src="../public//images/meetapp.png" alt="image of myflix project"
+                        style="width: 100%; height: 40%">
+                    <p class="card-paragraph">An events application that fetches upcoming events
+                        from
+                        the Google Calendar API, and displays those events in a fun and engaging way with the use of
+                        charts.
+                    </p>
+                    <div class="buttons-container">
+                        <a type="button" class="btn btn-primary card-button" data-bs-toggle="modal"
+                            data-bs-target="#meetupmodal">Read
+                            More</a>
+                        <a href="https://kostasrafael.github.io/meet/" class="btn btn-warning card-button"
+                            target="_blank" rel="noopener noreferrer">Live Demo</a>
+                        <a href="https://github.com/KostasRafael/meet.git" class="btn btn-warning card-button"
+                            target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body"
+                    style="display: flex; flex-direction: column; justify-content: space-evenly; align-items: center;">
+                    <h2 class="card-title">Movie-Api</h2>
+                    <img src="../public//images/movie-api.png" alt="image of movie_api project"
+                        style="width: 100%; height: 40%">
+                    <p class="card-paragraph"> A RESTful API that is integrated with a MongoDB
+                        database, and allows CRUD (Create, Retrieve, Update, Delete) operations to be performed on
+                        movies
+                        and users collections.
+                    </p>
+                    <div class="buttons-container">
+                        <a type="button" class="btn btn-primary card-button " data-bs-toggle="modal"
+                            data-bs-target="#movieapimodal">Read
+                            More</a>
+                        <a href="https://github.com/KostasRafael/movie_api.git" class="btn btn-warning card-button "
+                            target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap JS Bundle (includes Popper.js) -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </div>
+</body>
+
+</html>

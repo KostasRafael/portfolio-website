@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  background-color: #f5f1e6;
+}
+
+.navbar {
+  background-color: #f5f1e6;
+}
+
+.navbar-brand {
+  color: #e76f51;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 2rem;
+}
+
+.navigation-links li a {
+  color: #084769;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 1.2rem;
+}
+
+.cta {
+  background-color: #e76f51;
+  color: #084769;
+  border-radius: 999px;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cta::after {
+  background-image: linear-gradient(to bottom right, #e76f51, #084769);
+  content: "";
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 999px;
+  z-index: -1;
+}
+.cta:hover {
+  z-index: 0;
+  box-shadow: 40px 0 100px #e76f51, -40px 0 100px #084769;
+  color: white;
+}
+
+@media (min-width: 425px) {
+  .hero-heading {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #084769;
+    font-size: 1.75rem;
+  }
+
+  .hero-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 1rem;
+  }
+}
+
+.cta {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  height: 2rem;
+  padding: 0rem 0.5rem;
+  font-size: 1rem; /* Smaller text for mobile */
+  max-width: 100%; /* Prevent overflow */
+  border-radius: 400px; /* Maintain pill shape */
+  margin: 1rem auto; /* Center and space it */
+  text-align: center;
+}
+
+.cta::after {
+  height: 105%;
+  width: 102%;
+  border-radius: 999px;
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.4rem;
+}
+
+.navigation-links li a {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+
+  .cta {
+    height: 2.2rem;
+    font-size: 1.2rem; /* Smaller text for mobile */
+    padding: 0.5rem 1.25rem; /* Compact padding to maintain shape */
+    height: 2rem; /* Let the content define the width */
+    max-width: 100%; /* Prevent overflow */
+    border-radius: 999px; /* Maintain pill shape */
+    margin: 1rem auto; /* Center and space it */
+    text-align: center;
+  }
+
+  .cta::after {
+    height: 105%;
+    width: 102%;
+    border-radius: 999px;
+  }
+
+  .navbar-brand {
+    font-size: 1.8rem;
+  }
+
+  .navigation-links li a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .cta {
+    font-size: 1.4rem; /* Smaller text for mobile */
+    padding: 0.5rem 1.25rem; /* Compact padding to maintain shape */
+    height: 2.6rem;
+    font-weight: 600;
+    max-width: 100%; /* Prevent overflow */
+    border-radius: 999px; /* Maintain pill shape */
+    margin: 1rem auto; /* Center and space it */
+    text-align: center;
+  }
+
+  .cta::after {
+    height: 105%;
+    width: 102%;
+    border-radius: 999px;
+  }
+
+  .navbar-brand {
+    font-size: 2.4rem;
+  }
+
+  .navigation-links li a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hero-heading {
+    font-size: 2.9rem;
+  }
+
+  .cta {
+    height: 2.6rem;
+    font-size: 1.6rem; /* Smaller text for mobile */
+    padding: 0.5rem 1.25rem; /* Compact padding to maintain shape */
+    max-width: 100%; /* Prevent overflow */
+    border-radius: 999px; /* Maintain pill shape */
+    margin: 1rem auto; /* Center and space it */
+    text-align: center;
+  }
+
+  .cta::after {
+    height: 105%;
+    width: 102%;
+    border-radius: 999px;
+  }
+
+  .navbar-brand {
+    font-size: 2.8rem;
+  }
+
+  .navigation-links li a {
+    font-size: 1.6rem;
+  }
+}
