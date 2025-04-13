@@ -32,6 +32,12 @@
   color: #f5f1e6;
 }
 
+.buttons-container a:focus {
+  background-color: #d85a3f; /* slightly darker version of #e76f51 */
+  box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.4);
+  outline: none;
+}
+
 .modal-feature-card {
   background-color: #f8f9fa;
   border: 1px solid #dee2e6;

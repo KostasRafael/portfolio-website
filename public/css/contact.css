@@ -2,113 +2,220 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-.contact-h1 {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  color: #084769;
+@media (min-width: 400px) {
+  .submit-button-social-icons-div {
+    display: flex;
+    justify-content: space-between;
+    border: 0.5rem solid red;
+    flex-direction: row;
+  }
+
+  .form-container {
+    background-color: #084769;
+    color: hsl(44, 43%, 93%);
+    width: 40%;
+    min-width: 40%;
+  }
+
+  .social-icon {
+    display: inline-block;
+    width: 50px; /* Size of the icon */
+    height: 50px; /* Size of the icon */
+    background-color: #333; /* Dark background */
+    color: white; /* White icons */
+    border-radius: 50%; /* Make it circular */
+    text-align: center; /* Center the icon */
+    line-height: 50px; /* Vertically center the icon */
+    margin: 0.5rem; /* Space between icons */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+
+  .social-icon:hover {
+    background-color: #4c4f56; /* Slightly lighter shade on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+    transform: translateY(-3px); /* Icon "lifts" slightly on hover */
+  }
+
+  .social-icon i {
+    font-size: 24px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
+  }
+
+  .social-icon:hover i {
+    transform: scale(1.1); /* Slight zoom effect on icon */
+  }
+
+  /* Specific colors for each social icon */
+  .social-icon.facebook {
+    background-color: #1877f2; /* Facebook Blue */
+  }
+
+  .social-icon.instagram {
+    background-color: #e4405f; /* Instagram Pinkish */
+  }
+
+  .social-icon.medium {
+    background-color: #00ab6c; /* Medium Green */
+  }
+
+  .social-icon.x-twitter {
+    background-color: #1da1f2; /* Twitter Blue */
+  }
+
+  .social-icon.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+  }
+
+  .contact-h1::after {
+    content: "";
+    display: block;
+    width: 5rem; /* Adjust width to your liking */
+    height: 0.2rem;
+    /*background-color: #a52a2a;*/
+    margin-top: 15px;
+  }
 }
 
-.contact-paragraph {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: #084769;
-}
+@media (min-width: 200px) {
+  /*--------------------------------------------- Form----------------------------------------------- */
 
-.address-number-paragraph {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: #084769;
-  color: #e76f51;
-  font-size: 1.5rem;
-}
+  .form-label {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 
-.time-zone {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  color: #084769;
+  .form-control {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
 
-  margin-bottom: 0;
-}
+  .form-control:focus {
+    border-color: #5bc1f5;
+    box-shadow: 0 0 0 0.2rem rgba(74, 144, 226, 0.25);
+    outline: none;
+  }
 
-.form-container {
-  background-color: #084769;
-  color: hsl(44, 43%, 93%);
-  width: 40%;
-  min-width: 40%;
-}
+  .form-button {
+    padding: 0.9rem 1.2rem;
+    font-size: 1rem;
+    background-color: #e76f51;
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
 
-.social-icon {
-  display: inline-block;
-  width: 50px; /* Size of the icon */
-  height: 50px; /* Size of the icon */
-  background-color: #333; /* Dark background */
-  color: white; /* White icons */
-  border-radius: 50%; /* Make it circular */
-  text-align: center; /* Center the icon */
-  line-height: 50px; /* Vertically center the icon */
-  margin: 0.5rem; /* Space between icons */
-  transition: all 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-}
+  .form-button:hover {
+    background-color: #d85a3f; /* slightly darker version of #e76f51 */
+    box-shadow: 0 0 0 0.2rem rgba(231, 111, 81, 0.4);
+    outline: none;
+  }
 
-.social-icon:hover {
-  background-color: #4c4f56; /* Slightly lighter shade on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
-  transform: translateY(-3px); /* Icon "lifts" slightly on hover */
-}
+  .address-number {
+    border: 0.5rem solid blue;
+  }
 
-.social-icon i {
-  font-size: 24px; /* Icon size */
-  transition: transform 0.2s ease; /* Smooth icon transition */
-}
+  .address-number-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 0.8rem;
+  }
 
-.social-icon:hover i {
-  transform: scale(1.1); /* Slight zoom effect on icon */
-}
+  .contact-h1 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #084769;
+    font-size: 1rem;
+  }
 
-/* Specific colors for each social icon */
-.social-icon.facebook {
-  background-color: #1877f2; /* Facebook Blue */
-}
+  .time-zone-info {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 0.6rem;
+  }
 
-.social-icon.instagram {
-  background-color: #e4405f; /* Instagram Pinkish */
-}
+  .asterisk {
+    font-size: 1rem;
+  }
 
-.social-icon.medium {
-  background-color: #00ab6c; /* Medium Green */
-}
+  .contact-h1::after {
+    content: "";
+    display: block;
+    width: 2.5rem; /* Adjust width to your liking */
+    height: 0.2rem;
+    background-color: #a52a2a;
+    margin-top: 15px;
+  }
 
-.social-icon.x-twitter {
-  background-color: #1da1f2; /* Twitter Blue */
-}
+  .submit-button-social-icons-div {
+    flex-direction: column;
+  }
 
-.social-icon.linkedin {
-  background-color: #0077b5; /* LinkedIn Blue */
-}
+  /*--------------------------------- Social Icons--------------------------------------------------------- */
 
-.adress-number {
-}
+  .social-icon {
+    display: inline-block;
+    width: 40px; /* Size of the icon */
+    height: 40px; /* Size of the icon */
+    background-color: #333; /* Dark background */
+    color: white; /* White icons */
+    border-radius: 50%; /* Make it circular */
+    text-align: center; /* Center the icon */
+    line-height: 40px; /* Vertically center the icon */
+    margin: 0.5rem; /* Space between icons */
+    transition: all 0.3s ease; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
 
-.section-title {
-}
+  .social-icon:hover {
+    background-color: #4c4f56; /* Slightly lighter shade on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly larger shadow */
+    transform: translateY(-3px); /* Icon "lifts" slightly on hover */
+  }
 
-.section-title::after {
-  content: "";
-  display: block;
-  width: 5rem; /* Adjust width to your liking */
-  height: 0.2rem;
-  background-color: #a52a2a; /* Change to your red */
-  margin-top: 15px;
+  .social-icon i {
+    font-size: 15px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
+  }
+
+  .social-icon:hover i {
+    transform: scale(1.1); /* Slight zoom effect on icon */
+  }
+
+  /* Specific colors for each social icon */
+  .social-icon.facebook {
+    background-color: #1877f2; /* Facebook Blue */
+  }
+
+  .social-icon.instagram {
+    background-color: #e4405f; /* Instagram Pinkish */
+  }
+
+  .social-icon.medium {
+    background-color: #00ab6c; /* Medium Green */
+  }
+
+  .social-icon.x-twitter {
+    background-color: #1da1f2; /* Twitter Blue */
+  }
+
+  .social-icon.linkedin {
+    background-color: #0077b5; /* LinkedIn Blue */
+  }
 }
