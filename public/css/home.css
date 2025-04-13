@@ -43,12 +43,23 @@
   color: #084769;
 }
 
+@media (min-width: 200px) {
+  .all-inclusive-div {
+    gap: 1rem;
+  }
+
+  .profile-image {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
 @media (min-width: 425px) {
   .all-inclusive-div {
     gap: 1rem;
   }
 
-  .montserrat-sell-heading {
+  .hero-heading {
     font-size: 1.6rem;
   }
 

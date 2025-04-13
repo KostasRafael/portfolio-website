@@ -153,8 +153,6 @@
 @media (min-width: 425px) {
   .charts-container
     .responsive-cell-block.wk-desk-3.wk-ipadp-3.wk-tab-6.wk-mobile-12 {
-    width: 200px;
-    color: red;
     background-color: #084769;
   }
 }
@@ -181,7 +179,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1440px) {
   .charts-container .responsive-container-block.big-container {
     padding-top: 0px;
     padding-right: 20px;
