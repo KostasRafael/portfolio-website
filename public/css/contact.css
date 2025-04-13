@@ -3,13 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 @media (min-width: 400px) {
-  .submit-button-social-icons-div {
-    display: flex;
-    justify-content: space-between;
-    border: 0.5rem solid red;
-    flex-direction: row;
-  }
-
   .form-container {
     background-color: #084769;
     color: hsl(44, 43%, 93%);
@@ -117,20 +110,6 @@
     outline: none;
   }
 
-  .address-number {
-    border: 0.5rem solid blue;
-  }
-
-  .address-number-paragraph {
-    font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    color: #084769;
-    font-size: 0.8rem;
-  }
-
   .contact-h1 {
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -138,6 +117,16 @@
     font-style: normal;
     color: #084769;
     font-size: 1rem;
+  }
+
+  .contact-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 0.8rem;
   }
 
   .time-zone-info {
@@ -164,6 +153,7 @@
   }
 
   .submit-button-social-icons-div {
+    display: flex;
     flex-direction: column;
   }
 
@@ -217,5 +207,216 @@
 
   .social-icon.linkedin {
     background-color: #0077b5; /* LinkedIn Blue */
+  }
+}
+
+@media (min-width: 425px) {
+  /*--------------------------------------------- Form----------------------------------------------- */
+
+  /*.submit-button-social-icons-div {
+      display: flex;
+      justify-content: space-between;
+      border: 0.5rem solid red;
+      flex-direction: row;
+    }*/
+
+  .form-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .form-control {
+    font-size: 1.2rem;
+  }
+
+  .form-button {
+    font-size: 1.5rem;
+  }
+
+  .contact-h1 {
+    font-size: 1.2rem;
+  }
+
+  .contact-paragraph {
+    font-size: 1rem;
+  }
+
+  .time-zone-info {
+    font-size: 0.8rem;
+  }
+
+  .asterisk {
+    font-size: 1.2rem;
+  }
+
+  .contact-h1::after {
+    width: 2.6rem;
+  }
+
+  /*------------------------------------Social Icons---------------------------------------------*/
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+  }
+
+  .social-icon i {
+    font-size: 24px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
+  }
+}
+
+@media (min-width: 768px) {
+  /*--------------------------------------------- Form----------------------------------------------- */
+
+  .form-label {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .form-control {
+    font-size: 1.4rem;
+  }
+
+  .form-button {
+    font-size: 2rem;
+  }
+
+  .contact-h1 {
+    font-size: 1.4rem;
+  }
+
+  .contact-paragraph {
+    font-size: 1.2rem;
+  }
+
+  .time-zone-info {
+    font-size: 1rem;
+  }
+
+  .asterisk {
+    font-size: 1.4rem;
+  }
+
+  .contact-h1::after {
+    width: 4rem;
+  }
+
+  /*------------------------------------Social Icons---------------------------------------------*/
+
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+  }
+
+  .social-icon i {
+    font-size: 24px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
+  }
+}
+
+@media (min-width: 1024px) {
+  .form-label {
+    font-size: 1.6rem;
+  }
+
+  .form-control {
+    font-size: 1.6rem;
+  }
+
+  .form-button {
+    font-size: 2rem;
+  }
+
+  .contact-h1 {
+    font-size: 1.8rem;
+  }
+
+  .contact-paragraph {
+    font-size: 1.6rem;
+  }
+
+  .time-zone-info {
+    font-size: 1.2rem;
+  }
+
+  .asterisk {
+    font-size: 1.6rem;
+  }
+
+  .contact-h1::after {
+    width: 5rem;
+  }
+
+  .submit-button-social-icons-div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /*------------------------------------Social Icons---------------------------------------------*/
+
+  .social-icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+  }
+
+  .social-icon i {
+    font-size: 20px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
+  }
+}
+
+@media (min-width: 1440px) {
+  .form-label {
+    font-size: 2rem;
+  }
+
+  .form-control {
+    font-size: 2rem;
+  }
+
+  .form-button {
+    font-size: 2.4rem;
+  }
+
+  .contact-h1 {
+    font-size: 2.2rem;
+  }
+
+  .contact-paragraph {
+    font-size: 2rem;
+  }
+
+  .time-zone-info {
+    font-size: 1.4rem;
+  }
+
+  .asterisk {
+    font-size: 2rem;
+  }
+
+  .contact-h1::after {
+    width: 6rem;
+  }
+
+  .submit-button-social-icons-div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /*------------------------------------Social Icons---------------------------------------------*/
+
+  .social-icon {
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+  }
+
+  .social-icon i {
+    font-size: 40px; /* Icon size */
+    transition: transform 0.2s ease; /* Smooth icon transition */
   }
 }
