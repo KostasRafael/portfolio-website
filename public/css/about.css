@@ -45,6 +45,38 @@
   margin-top: 2rem;
 }
 
+@media (min-width: 200px) {
+  .container {
+    min-width: 100%;
+  }
+
+  .about-me-main {
+    width: 100%;
+  }
+
+  .hero-title-image-paragraph {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 0.1rem;
+  }
+
+  .grid-col-span-4 {
+    grid-column: span 3;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .certificates-icons {
+    width: 4rem;
+  }
+
+  .paragraph-container {
+    width: 100%;
+  }
+}
+
 @media (min-width: 425px) {
   .container {
     min-width: 100%;

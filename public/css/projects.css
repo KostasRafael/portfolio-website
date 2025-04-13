@@ -114,6 +114,45 @@
   object-fit: contain;
 }
 
+@media (min-width: 200px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-title {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.8rem;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+  }
+
+  .card-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.1rem;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    text-align: center;
+  }
+
+  .card-button {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    line-height: 1.1rem;
+  }
+}
+
 @media (min-width: 425px) {
   .projects-grid {
     grid-template-columns: 1fr;
