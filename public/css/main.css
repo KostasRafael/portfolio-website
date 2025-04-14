@@ -28,6 +28,10 @@ body {
   font-size: 1.2rem;
 }
 
+.cta-a {
+  text-decoration: none;
+}
+
 .cta {
   background-color: #e76f51;
   color: #084769;
