@@ -48,6 +48,25 @@
     gap: 1rem;
   }
 
+  .hero-heading {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #084769;
+    font-size: 1.5rem;
+  }
+
+  .hero-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 1rem;
+  }
+
   .profile-image {
     width: 8rem;
     height: 8rem;
@@ -60,7 +79,22 @@
   }
 
   .hero-heading {
-    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: #084769;
+    font-size: 1.75rem;
+  }
+
+  .hero-paragraph {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #084769;
+    font-size: 1rem;
   }
 
   .profile-image {
@@ -73,6 +107,10 @@
 }
 
 @media (min-width: 768px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+
   .profile-image {
     width: 11rem;
     height: 11rem;
@@ -80,8 +118,12 @@
 }
 
 @media (min-width: 1024px) {
-  body {
-    background-color: aqua;
+  .hero-heading {
+    font-size: 4rem;
+  }
+
+  .hero-paragraph {
+    font-size: 1.6rem;
   }
 
   .profile-image {
@@ -90,9 +132,16 @@
   }
 
   @media (min-width: 1440px) {
+    .hero-heading {
+      font-size: 4rem;
+    }
+
     .profile-image {
       width: 20rem;
       height: 20rem;
+    }
+
+    .hero-paragraph {
     }
   }
 }
