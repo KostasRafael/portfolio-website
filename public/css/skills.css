@@ -158,6 +158,38 @@
   .skills-paragraph {
     font-size: 1.2rem;
   }
+
+  .marquee-container {
+    padding-block: 15px;
+    border-block: 1px solid;
+    overflow: hidden;
+
+    --gap: 20px;
+    display: flex;
+    gap: var(--gap);
+  }
+
+  .marquee-container ul {
+    list-style: none;
+    flex-shrink: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--gap);
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-100% - var(--gap)));
+    }
+  }
+
+  .marquee-image {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+  }
 }
 
 @media (min-width: 425px) {
@@ -209,28 +241,6 @@
     --gap: 20px;
     display: flex;
     gap: var(--gap);
-  }
-
-  .marquee-container ul {
-    list-style: none;
-    flex-shrink: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--gap);
-    animation: scroll 20s linear infinite;
-  }
-
-  @keyframes scroll {
-    to {
-      transform: translate(calc(-100% - var(--gap)));
-    }
-  }
-
-  .marquee-image {
-    width: 6rem;
-    height: 6rem;
-    object-fit: contain;
   }
 
   .circular_progress .text-blk.section-subheadtext {
