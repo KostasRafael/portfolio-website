@@ -97,7 +97,7 @@ export default function Layout({ children }: LayoutProps) {
       >
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <a href="/#home" className="font-bold text-xl" onClick={(e) => handleNavClick(e, 'home')}>
-            Portfolio
+            Rafael Techie Co.
           </a>
           
           {/* Mobile menu button */}

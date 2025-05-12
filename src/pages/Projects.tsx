@@ -42,9 +42,9 @@ const Projects = () => {
       id: 1,
       title: "Modern Online Shop",
       description: "A modern, fully functional online shop built with Node.js and React",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["React",  "Context API", "Node.js", "MongoDB"],
       image: onlineShopImage,
-      longDescription: "This minimalist dashboard is designed to help users focus on what matters. With a clean interface and intuitive controls, it streamlines workflow and enhances productivity.",
+      longDescription: "A full-stack e-commerce application built with Node.js and Express on the backend, and React with TypeScript on the frontend. The UI features a clean, minimal design focused on usability and responsiveness. Core features include product browsing, cart management, and secure order placement. This project showcases my ability to develop scalable, user-friendly web applications with a modern tech stack.",
       features: ["Displays a list of products", "add to and remove from cart", "checkout", "products grouped into categories", "search products", "Dark/Light mode", "Real-time data visualization", "Cross-device synchronization"],
       technologies: ["React", "TypeScript", "Node.js", "Express.js"]
     },
@@ -52,20 +52,20 @@ const Projects = () => {
       id: 2,
       title: "myFlix movies application",
       description: "A movies application built with Node.js and React",
-      tags: ["Node.js", "React", "MongoDB"],
+      tags: ["React", "Redux", "Node.js", "MongoDB"],
       image: myFlixImage,
-      longDescription: "This e-commerce platform provides a seamless shopping experience with focus on product discovery, user engagement, and simplified checkout process.",
-      features: ["Personalized recommendations", "Advanced filtering", "Wishlist functionality", "One-click checkout"],
-      technologies: ["React", "JSX", "Node.js", "Expres.js"]
+      longDescription: "myFlix client is a movies application that displays a list of movies. Users can create an account and then login using their user credentials. Once logged in, users can add movies to their list of favorite movies, as well as remove movies from that list. Additionally, users can edit their user details and delete their account.",
+      features: ["Display a list of movies", "Users can signup and login", "Users can add movies to their list of favorite movies", "Users can edid or delete their account"],
+      technologies: ["React", "redux", "JSX", "Node.js", "Expres.js"]
     },
     {
       id: 3,
       title: "Meet App events application",
-      description: "An events application that allows users to briwse different events",
+      description: "An events application that allows users to browse different events",
       tags: ["Mobile", "React Native", "Health"],
       image: meetImage,
-      longDescription: "This health and wellness app provides comprehensive tracking for physical activity, nutrition, sleep patterns, and mental wellbeing in one unified platform.",
-      features: ["Activity tracking", "Meal planning", "Sleep analysis", "Mood journaling", "Meditation guides"],
+      longDescription: "Meet App is a React-based event discovery application that fetches event data from the Google Calendar API. Users can explore events worldwide, filter them by city, view detailed event information, and customize how many events are displayed. The app supports offline access through cached data and is installable as a Progressive Web App (PWA). It also features interactive scatter and pie charts for visual insights into event distribution and attendee data.",
+      features: ["Progressive Web App (PWA)", "Google Calendar API Integration", "Data Visualization", "Offline Access", "Responsive UI", "Search Events by City", "Search Events by Name", "Customizable Event Display", "Event Detail View", "Bank synchronization"],
       technologies: ["React Native", "Firebase", "HealthKit API", "Google Fit API"]
     },
     {
@@ -75,7 +75,7 @@ const Projects = () => {
       tags: ["Web App", "Data Visualization", "React"],
       image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
       longDescription: "This personal finance application empowers users to take control of their finances through intuitive visualization of spending patterns and automated savings recommendations.",
-      features: ["Expense categorization", "Budget planning", "Goal setting", "Financial insights", "Bank synchronization"],
+      features: ["Progressive Web App (PWA)", "Google Calendar API Integration", "Data Visualization", "Offline Access", "Responsive UI", "Search Events by City", "Search Events by Name", "Customizable Event Display", "Event Detail View", "Bank synchronization"],
       technologies: ["React", "D3.js", "Node.js", "Plaid API"]
     },
   ];

@@ -17,6 +17,17 @@ import NotFound from "./pages/NotFound";
 import Blog from "./pages/Blog";
 import ScrollablePage from "./pages/ScrollablePage";
 
+
+
+// client side routing
+// component based software engineering (CBSE)
+// identify, construct, catalog, disseminate
+// key principles of software engineering: modularity, separation of concerns, reuse, mainteinability
+// component qualification, component adaptation, component composition, 
+
+// The root component is the top-level React component that is passed to ReactDOM.createRoot(...).render(...) (or previously ReactDOM.render(...)).
+// In the app I am studying, the root component is the App component.
+
 const queryClient = new QueryClient();
 
 const App = () => (

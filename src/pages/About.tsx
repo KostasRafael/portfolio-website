@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import imageBarcelona from '../../src/images/my-profile-image-barcelona.jpg';
 import meWithAnimalImage from '../../src/images/me-animal.jpg';
 import thailandImage from '../../src/images/thailand.jpg';
+import amsterdamImage from '../../src/images/bike-amsterdam.jpg';
 
 const About = () => {
   const handleDownloadResume = () => {
@@ -19,19 +20,30 @@ const About = () => {
 
   return (
     <div className="py-8 sm:py-12 max-w-4xl mx-auto px-4">
+     
       
-      <div className="space-y-8 sm:space-y-12">
-          <h1 className="text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Creative Thinker. Logical Coder. People-Centric Developer.</h1>
+      <div className="flex space-y-0 sm:space-y-0">
+        <div className= "border">
+          <h1 className="text-3xl sm:text-4xl font-bold mb-2 sm:mb-2">Creative Thinker. Logical Coder. People-Centric Developer.</h1>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
              From philosophy to web development, with years of customer-facing experience, I bring critical thinking, logical problem-solving, and real-world people skills to create thoughtful, user-focused digital experiences.
-            </p>
-        {/* Image and Intro Section */}
-        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center">
-          <div className="w-full md:w-1/2">
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 border">
             <img 
               src={imageBarcelona} 
               alt="me Barcelona" 
               className="rounded-lg shadow-md w-full h-auto object-cover aspect-[3/4]"
+            />
+        </div>
+        </div>
+        {/* Image and Intro Section */}
+        <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center">
+          <div className="w-full md:w-1/2">
+            <img 
+              src={amsterdamImage} 
+              alt="me in Amsterdam on a bike" 
+              className="rounded-lg shadow-md w-full h-auto object-contain aspect-[3/4]"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-3 sm:space-y-4">
@@ -105,7 +117,6 @@ const About = () => {
           </Button>
         </div>
       </div>
-    </div>
   );
 };
 
