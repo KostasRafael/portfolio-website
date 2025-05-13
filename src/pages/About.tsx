@@ -29,7 +29,7 @@ const About = () => {
              From philosophy to web development, with years of customer-facing experience, I bring critical thinking, logical problem-solving, and real-world people skills to create thoughtful, user-focused digital experiences.
           </p>
         </div>
-        <div className="w-full md:w-1/2 border">
+        <div className="w-full md:w-1/2">
             <img 
               src={imageBarcelona} 
               alt="me Barcelona" 
