@@ -8,8 +8,8 @@ const Home = () => {
   const handleDownloadResume = () => {
     // In a real app, this would be a link to an actual PDF file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Path to your resume file
-    link.download = 'john-doe-resume.pdf';
+    link.href = '../../Konstantinos Rafael Manousoudakis.pdf'; // Path to your resume file
+    link.download = 'Konstantinos Rafael Manousoudakis.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

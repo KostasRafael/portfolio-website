@@ -11,8 +11,8 @@ const About = () => {
   const handleDownloadResume = () => {
     // In a real scenario, this would be a link to a PDF file
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Path to your resume file
-    link.download = 'john-doe-resume.pdf';
+    link.href = '../../Konstantinos Rafael Manousoudakis.pdf'; // Path to your resume file
+    link.download = 'Konstantinos Rafael Manousoudakis.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -23,7 +23,7 @@ const About = () => {
      
       
       <div className="flex space-y-0 sm:space-y-0">
-        <div className= "border">
+        <div>
           <h1 className="text-3xl sm:text-4xl font-bold mb-2 sm:mb-2">Creative Thinker. Logical Coder. People-Centric Developer.</h1>
           <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed">
              From philosophy to web development, with years of customer-facing experience, I bring critical thinking, logical problem-solving, and real-world people skills to create thoughtful, user-focused digital experiences.
@@ -39,11 +39,11 @@ const About = () => {
         </div>
         {/* Image and Intro Section */}
         <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center">
-          <div className="w-full md:w-1/2">
+          <div className="border-red-500 w-full md:w-1/2 border-0">
             <img 
               src={amsterdamImage} 
               alt="me in Amsterdam on a bike" 
-              className="rounded-lg shadow-md w-full h-auto object-contain aspect-[3/4]"
+              className="border-red-500 rounded-lg shadow-md w-full h-auto object-contain aspect-[3/4]"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-3 sm:space-y-4">

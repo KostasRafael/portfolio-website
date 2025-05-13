@@ -19,15 +19,6 @@ import ScrollablePage from "./pages/ScrollablePage";
 
 
 
-// client side routing
-// component based software engineering (CBSE)
-// identify, construct, catalog, disseminate
-// key principles of software engineering: modularity, separation of concerns, reuse, mainteinability
-// component qualification, component adaptation, component composition, 
-
-// The root component is the top-level React component that is passed to ReactDOM.createRoot(...).render(...) (or previously ReactDOM.render(...)).
-// In the app I am studying, the root component is the App component.
-
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -53,5 +44,20 @@ const App = () => (
     </ThemeProvider>
   </QueryClientProvider>
 );
+
+// If it encounters a component, it calls it and keeps descending down to the returned react elements.
+// The virtual DOM is the tree of elements
+// Needs to sync the virtual DOM with the real DOM
+// On the initial render React has to insert the full tree in the DOM
+// The tree chanfes, for example, the state of a component might change which will result to a different return value, which will in turn 
+// affect and change some react element.
+// React generates a new tree of elements (a tree that accounts for the state change and consequently the new returned value)
+// we now have 2 tees, the old and the new
+
+
+// How React communicates with the renderer?
+// updater
+// Effect = activity like DOM mutation or lifecycle method call
+// Commits face
 
 export default App;
