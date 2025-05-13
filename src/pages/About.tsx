@@ -33,17 +33,17 @@ const About = () => {
             <img 
               src={imageBarcelona} 
               alt="me Barcelona" 
-              className="rounded-lg shadow-md w-full h-auto object-cover aspect-[3/4]"
+              className="rounded-lg w-full h-auto object-cover aspect-[3/4]"
             />
         </div>
         </div>
         {/* Image and Intro Section */}
         <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-center">
-          <div className="border-red-500 w-full md:w-1/2 border-0">
+          <div className="w-full md:w-1/2 border-0">
             <img 
               src={amsterdamImage} 
               alt="me in Amsterdam on a bike" 
-              className="border-red-500 rounded-lg shadow-md w-full h-auto object-contain aspect-[3/4]"
+              className="rounded-lg w-full h-auto object-contain aspect-[3/4]"
             />
           </div>
           <div className="w-full md:w-1/2 space-y-3 sm:space-y-4">
